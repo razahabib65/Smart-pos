@@ -1,0 +1,12 @@
+<div class="layout" [class.layout--collapsed]="sidebarCollapsed()" id="main-layout">
+  <!-- Sidebar -->
+  <app-sidebar [collapsed]="sidebarCollapsed()" />
+
+  <!-- Right Column: Header + Content -->
+  <div class="layout__right">
+    <app-header (sidebarToggle)="onToggleSidebar()" />
+    <main class="layout__content" id="main-content">
+      <router-outlet />
+    </main>
+  </div>
+</div>

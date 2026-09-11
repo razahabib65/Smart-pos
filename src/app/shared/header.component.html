@@ -1,0 +1,37 @@
+<header class="header" id="app-header">
+  <!-- Hamburger Toggle -->
+  <button class="header__toggle" id="sidebar-toggle-btn" (click)="onToggleSidebar()" aria-label="Toggle sidebar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="3" y1="6" x2="21" y2="6"/>
+      <line x1="3" y1="12" x2="21" y2="12"/>
+      <line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+  </button>
+
+  <!-- Search Bar -->
+  <div class="header__search" id="header-search">
+    <svg class="header__search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"/>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+    <input type="text" class="header__search-input" placeholder="Search anything…" id="header-search-input" />
+    <kbd class="header__search-shortcut">⌘K</kbd>
+  </div>
+
+  <!-- Right Actions -->
+  <div class="header__actions" id="header-actions">
+    <!-- Notification Bell -->
+    <button class="header__action-btn" id="notification-btn" aria-label="Notifications">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+      </svg>
+      <span class="header__notification-dot"></span>
+    </button>
+
+    <!-- User Avatar -->
+    <button class="header__avatar" id="user-avatar-btn" aria-label="User menu">
+      <span class="header__avatar-initials">RH</span>
+    </button>
+  </div>
+</header>
